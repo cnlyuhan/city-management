@@ -1,0 +1,19 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/city-management-admin/target
+/city-management-entity/target
+/city-management-front/target
+/city-management-api.pdf
+/city-management-api.md
+/api-admin.json
+/api-admin2.json
+/api-front.json
+/api-front2.json
+/.idea
+/city-management-parent/.idea
