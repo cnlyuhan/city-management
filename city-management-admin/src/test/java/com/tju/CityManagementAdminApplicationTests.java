@@ -35,38 +35,38 @@ class CityManagementAdminApplicationTests {
     * @date: 2023/10/26 16:35
     */
     
-    @Test
-    public void insertPostsandMembers(){
-        List<Menu> allMenuList = menuService.list();
-        for(Menu menu: allMenuList){
-            Long fatherMenu = menu.getFatherMenu();
-            Integer hasSon = menu.getHasSon();
-            Integer memberFlag = menu.getMemberFlag();
-            String menuName = menu.getName();
-            Long menuId = menu.getId();
-            if(hasSon == 1){
-                continue;
-            }
-            if(memberFlag == 0){
-                // 插入的是文章
-                Post post = new Post();
-                post.setPostTitle(menuName + "的标题");
-                post.setHtmlContent(menuName + "的文章内容");
-                post.setMenuId(menuId);
-                post.setImage("imageUrl");
-                postService.save(post);
-            }
-            else {
-                // 插入的是成员
-                Member member = new Member();
-                member.setMenuId(menuId);
-                member.setImage("portraitUrl");
-                member.setIntro("这是该成员的简介");
-                member.setName("张三");
-                memberService.save(member);
-            }
-        }
-    }
+//    @Test
+//    public void insertPostsandMembers(){
+//        List<Menu> allMenuList = menuService.list();
+//        for(Menu menu: allMenuList){
+//            Long fatherMenu = menu.getFatherMenu();
+//            Integer hasSon = menu.getHasSon();
+//            Integer memberFlag = menu.getMemberFlag();
+//            String menuName = menu.getName();
+//            Long menuId = menu.getId();
+//            if(hasSon == 1){
+//                continue;
+//            }
+//            if(memberFlag == 0){
+//                // 插入的是文章
+//                Post post = new Post();
+//                post.setPostTitle(menuName + "的标题");
+//                post.setHtmlContent(menuName + "的文章内容");
+//                post.setMenuId(menuId);
+//                post.setImage("imageUrl");
+//                postService.save(post);
+//            }
+//            else {
+//                // 插入的是成员
+//                Member member = new Member();
+//                member.setMenuId(menuId);
+//                member.setImage("portraitUrl");
+//                member.setIntro("这是该成员的简介");
+//                member.setName("张三");
+//                memberService.save(member);
+//            }
+//        }
+//    }
 
 
 
