@@ -26,6 +26,6 @@ mybatis-plus:
 aliyun:
   oss:
     endpoint: https://oss-cn-beijing.aliyuncs.com
-    accessKeyId: LTAI5tRQuxoM6HLgq9NaT7MN
-    accessKeySecret: GghlkZEbwC2HyGvfpLfQTP0DlfQROv
+    accessKeyId: xxxx
+    accessKeySecret: xxxxx
     bucketName: city-management
