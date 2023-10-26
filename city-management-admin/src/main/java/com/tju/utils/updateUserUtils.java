@@ -24,4 +24,8 @@ public class updateUserUtils {
         }
     }
 
+    public static Long getTestId(){
+        return 1713122010360557569L;
+    }
+
 }

@@ -24,6 +24,7 @@ public class MetaObjectHandler implements com.baomidou.mybatisplus.core.handlers
     public void insertFill(MetaObject metaObject) {
         log.info(metaObject.toString());
         Long operateUserId = updateUserUtils.getCurrentId(httpServletRequest);
+//        Long testId = updateUserUtils.getTestId();
         metaObject.setValue("createTime", LocalDateTime.now());
         metaObject.setValue("updateTime", LocalDateTime.now());
         metaObject.setValue("createUser", operateUserId);
